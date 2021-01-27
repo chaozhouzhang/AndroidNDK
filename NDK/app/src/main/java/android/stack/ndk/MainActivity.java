@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("src", src + "");
 
         System.out.println(SignatureTool.getSignature(this));
+
+        Family.init(this);
+
+
     }
 
     /**

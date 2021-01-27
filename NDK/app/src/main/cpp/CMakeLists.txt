@@ -52,6 +52,17 @@ add_library( # Sets the name of the library.
         family/family_jni.cpp
         )
 
+
+add_library( # Sets the name of the library.
+        externc
+
+        # Sets the library as a shared library.
+        SHARED
+
+        # Provides a relative path to your source file(s).
+        externc/c_code.c
+        externc/cpp_code.cpp
+        )
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
 # default, you only need to specify the name of the public NDK library
@@ -83,6 +94,12 @@ target_link_libraries( # Specifies the target library.
 
 target_link_libraries( # Specifies the target library.
         family
+        # Links the target library to the log library
+        # included in the NDK.
+        ${log-lib})
+
+target_link_libraries( # Specifies the target library.
+        externc
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib})

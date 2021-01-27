@@ -7,5 +7,5 @@ public class Family {
 
 
 
-    public static native String init(Object context, String str);
+    public static native void init(Object context);
 }

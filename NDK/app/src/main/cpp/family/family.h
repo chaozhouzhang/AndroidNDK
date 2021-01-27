@@ -1,21 +1,13 @@
 //
 // Created by Administrator on 2021/1/27.
 //
-
 #ifndef FAMILY_H
 #define FAMILY_H
-
-
 namespace family {
     extern const char *MAJOR_VERSION;
     extern const char *MINOR_VERSION;
     extern const char *BUILD_VERSION;
     extern const char *VERSION;
-
-    void cry();
-
-    void open_eyes();
-
     enum Gender {
         MALE = 0,//男
         FEMALE = 1//女
@@ -47,9 +39,11 @@ namespace family {
         virtual void OnPee() = 0;//尿尿
         virtual void OnHungry() = 0;//肚子饿了
         virtual void OnSleep() = 0;//睡着了
-
     };
+}
 
+
+namespace family {
     struct IParent {
         /**
          * 监听宝宝事件
@@ -60,8 +54,23 @@ namespace family {
         virtual void SetEdu(Edu edu) = 0;//学历
         virtual void SetWealth(Wealth wealth) = 0;//财富值
     };
-
     extern "C" IParent* GetParent();
 }
 
 #endif //FAMILY_H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

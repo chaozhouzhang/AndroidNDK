@@ -13,7 +13,6 @@ Java_android_stack_ndk_MainActivity_stringFromJNI(
 extern "C"
 JNIEXPORT jint JNICALL
 Java_android_stack_ndk_MainActivity_plus(JNIEnv *env, jclass clazz, jint a, jint b) {
-    // TODO: implement plus()
     jint sum = a+b;
     return sum;
 }
