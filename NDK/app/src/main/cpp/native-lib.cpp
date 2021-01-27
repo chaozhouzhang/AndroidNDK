@@ -17,3 +17,4 @@ Java_android_stack_ndk_MainActivity_plus(JNIEnv *env, jclass clazz, jint a, jint
     jint sum = a+b;
     return sum;
 }
+

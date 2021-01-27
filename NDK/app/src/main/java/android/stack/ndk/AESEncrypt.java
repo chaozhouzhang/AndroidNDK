@@ -36,7 +36,7 @@ public class AESEncrypt {
     /**
      * 检查 打包签名是否 是正确的 防止被二次打包
      *
-     * @param con
+     * @param context
      * @return 1 : pass ， -1 or  -2 : error.
      */
     public static native int checkSignature(Object context);
