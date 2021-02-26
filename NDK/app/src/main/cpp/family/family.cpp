@@ -5,7 +5,7 @@
 #include <android/log.h>
 #include "family.h"
 #include "baby_event_impl.h"
-
+#include "JS_C_convert.h"
 using namespace family;
 
 
